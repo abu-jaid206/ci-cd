@@ -41,10 +41,10 @@ jobs:
       # List build directory contents (for debugging)
       - name: List build directory contents (for debugging)
         run: ls -la ./build
- test: 
+  test:
     needs: build
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: checkout repo
         uses: actions/checkout@v3
       - name: use node.js
